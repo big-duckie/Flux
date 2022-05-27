@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"golder/app/config"
-	"golder/app/consts"
-	"golder/app/db"
+	"flux/app/config"
+	"flux/app/consts"
+	"flux/app/db"
 
 	"github.com/urfave/cli/v2"
 )

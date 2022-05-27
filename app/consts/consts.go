@@ -1,7 +1,7 @@
 package consts
 
 import (
-	"golder/app/config"
+	"flux/app/config"
 
 	"github.com/urfave/cli/v2"
 	"gorm.io/gorm"

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"golder/app/cmd"
-	"golder/app/consts"
+	"flux/app/cmd"
+	"flux/app/consts"
 	"log"
 	"os"
 
@@ -11,7 +11,7 @@ import (
 
 func main() {
 	consts.App = cli.NewApp()
-	consts.App.Name = "Golder"
+	consts.App.Name = "Flux"
 	consts.App.Usage = ""
 	consts.App.Authors = []*cli.Author{
 		{

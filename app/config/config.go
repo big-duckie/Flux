@@ -12,13 +12,13 @@ import (
 	"github.com/pelletier/go-toml/v2"
 )
 
-type Golder struct {
+type Flux struct {
 	TEMP string
 }
 
 type Database struct {
 	DB_DRIVER string `default:"sqlite" comment:"Which driver to use for the database.\n# \"sqlite\", \"mysql\", \"postgres\""`
-	DB_URI    string `default:"golder.db" comment:"URI to connect to the database."`
+	DB_URI    string `default:"flux.db" comment:"URI to connect to the database."`
 }
 
 type Authentication struct {
@@ -26,7 +26,7 @@ type Authentication struct {
 }
 
 type Configuration struct {
-	Golder         Golder
+	Flux           Flux
 	Database       Database
 	Authentication Authentication
 }

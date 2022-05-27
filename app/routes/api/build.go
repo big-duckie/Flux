@@ -2,8 +2,8 @@ package api
 
 import (
 	"encoding/json"
-	"golder/app/consts"
-	"golder/app/db"
+	"flux/app/consts"
+	"flux/app/db"
 	"net/http"
 
 	"github.com/emvi/null"

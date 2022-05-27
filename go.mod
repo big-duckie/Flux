@@ -1,4 +1,4 @@
-module golder
+module flux
 
 go 1.18
 

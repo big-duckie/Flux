@@ -1,4 +1,4 @@
-[Golder]
+[Flux]
 TEMP = ''
 
 [Database]
@@ -6,7 +6,7 @@ TEMP = ''
 # # "sqlite", "mysql", "postgres"
 DB_DRIVER = 'sqlite'
 # URI to connect to the database.
-DB_URI = 'golder.db'
+DB_URI = 'flux.db'
 
 [Authentication]
 # Do not change this key once set.

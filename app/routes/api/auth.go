@@ -2,9 +2,9 @@ package api
 
 import (
 	"encoding/json"
-	"golder/app/auth"
-	"golder/app/consts"
-	"golder/app/db"
+	"flux/app/auth"
+	"flux/app/consts"
+	"flux/app/db"
 	"net/http"
 	"time"
 

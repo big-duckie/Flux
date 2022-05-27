@@ -2,8 +2,8 @@ package auth
 
 import (
 	"errors"
-	"golder/app/consts"
-	"golder/app/db"
+	"flux/app/consts"
+	"flux/app/db"
 	"net/http"
 	"strings"
 	"time"

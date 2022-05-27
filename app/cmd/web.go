@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"golder/app/routes"
-	"golder/app/utils"
+	"flux/app/routes"
+	"flux/app/utils"
 	"html/template"
 	"io/fs"
 	"net/http"
@@ -19,7 +19,7 @@ import (
 var Web = cli.Command{
 	Name:        "web",
 	Usage:       "Starts the webserver",
-	Description: "Start the Golder webserver. That's all you need to run.",
+	Description: "Start the Flux webserver. That's all you need to run.",
 	Action:      runWeb,
 	Flags: []cli.Flag{
 		intFlag("port, p", 3000, "Web server port"),
