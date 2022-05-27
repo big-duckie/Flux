@@ -19,8 +19,41 @@ type Version struct {
 }
 
 type Modpack struct {
+	ID          uint
+	Name        string
+	Slug        string
+	Recommended string
+	Latest      string
+	Builds      []Build
+}
+
+type Build struct {
+	ID        uint
+	ModpackID uint
+	Name      string
+	Minecraft string
+	Java      string
+	Memory    uint
+	Mods      []Version `gorm:"many2many:mod_versions;"`
+}
+
+type User struct {
+	ID          uint
+	Username    string
+	Email       string
+	Password    string
+	Auth        string
+	Permissions string // JSON encoded
+}
+
+type Client struct {
 	ID   uint
 	Name string
-	Slug string
-	Mods []Mod `gorm:"many2many:modpack_mods;"`
+	UUID string
+}
+
+type Key struct {
+	ID   uint
+	Name string
+	Key  string
 }
